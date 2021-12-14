@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name":"Block Website",
+  "version": "1.0.0",
+  "description": "This is a Block Website extension, you can block any website using this.",
+  "icons": {
+    "16": "./icons/16block.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://www.netflix.com/*","https://www.youtube.com/*"],
+    "js": ["js/index.js"]
+  }],
+  "browser_action": {
+    "default_icon": "./icons/16block.png"
+  }
+}
